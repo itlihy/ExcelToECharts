@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/*图表的样式*/
+#ECharts_main {
+    width: 70%;
+    height: 70%;
+    border: 1px solid #666666;
+    margin: 5px auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+#select_tip {
+    width: 300px;
+    height: 70px;
+    font-size: 3em;
+    font-weight: 700;
+    color: #aaaaaa;
+    border: 3px dotted;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#header {
+    width: 70%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+#footer {
+    width: 70%;
+    margin: 0px auto;
+}
+
+h1 {
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    padding: 7px 10px;
+    border-radius: 4px;
+    background: #950904;
+    color: #fff;
+    font-weight: bold;
+}
+
+.fileinput-button input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+}
+
+.fileinput-button :hover {
+    cursor: pointer;
+}

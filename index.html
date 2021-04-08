@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Excel to ECharts V2.3</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="scripts/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/echarts.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <h1>Excel to ECharts V2.3</h1>
+    <span class="fileinput-button" id="btnLine">
+		<span>选择文件（线、柱）</span>
+		<input type="file" id="inputLine"
+               accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+               onchange="excelToECharts(this)" onclick="this.value=''">
+	</span>
+    <span class="fileinput-button" id="btnPie">
+		<span>选择文件（饼图）</span>
+		<input type="file" id="inputPie"
+               accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+               onchange="excelToECharts(this)" onclick="this.value=''">
+	</span>
+</div>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="ECharts_main">
+    <div id="select_tip">请选择文件</div>
+</div>
+<div id="footer">
+    <b>只支持xls和xlsx格式的excel文件，具体数据格式请参照模板文件！</b>
+</div>
+
+</body>
+</html>
